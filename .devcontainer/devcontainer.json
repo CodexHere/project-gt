@@ -11,7 +11,8 @@
 				"idf.customExtraPaths": "",
 				"idf.pythonBinPath": "/opt/esp/python_env/idf5.3_py3.10_env/bin/python",
 				"idf.toolsPath": "/opt/esp",
-				"idf.gitPath": "/usr/bin/git"
+				"idf.gitPath": "/usr/bin/git",
+				"idf.showOnboardingOnInit": false
 			},
 			"extensions": [
 				"espressif.esp-idf-extension"
