@@ -10,7 +10,6 @@ services:
     stdin_open: true
     volumes:
       - ..:/workspace
-      - vscode_server_cache:/home/esp/.vscode-server/
       - /dev:/dev
       - /dev/bus/usb:/dev/bus/usb
 

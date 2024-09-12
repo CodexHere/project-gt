@@ -11,9 +11,9 @@
 
 #define LOG_FORMAT(letter, format) LOG_COLOR_##letter #letter " (%" PRIu32 ") " LOG_RESET_COLOR "%s: " format "\n"
 
-#ifdef KILL_LOGGING
-#define ESP_LOGI(tag, format, ...) (void)0
-#endif
+// #ifdef KILL_LOGGING
+// #define ESP_LOGI(tag, format, ...) (void)0
+// #endif
 
 led_strip_handle_t configure_led();
 
