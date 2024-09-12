@@ -2,3 +2,4 @@ build
 *.old
 .vscode/c_cpp_properties.json
 debug.log
+managed_components
