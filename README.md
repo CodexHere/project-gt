@@ -22,6 +22,12 @@ However, I've ported the environment and project to native ESP-IDF, which so far
 
 Currently, a simple app starts a Task responsible for cycling an [onboard] RGB LED through GPIO via RMT. The component used is the LED Strip Component by Espressif from the Component Registry. The trick I learned with this setup is how the app starts up (slightly different than freeRTOS docs indicate), and working with the pointer logic for parameters passed into tasks and queues.
 
+I've added a common `includes` path to be accessible throughout the project.
+
+There's a new `KILL_LOGGING` build parameter you can add that will disable logging throughout my code.
+ 
+I've also spit the code into "private" Components so they are separated and the logic is cleaner.
+
 ## Docker
 
 A fully functioning Docker Image and Compose file is supplied, but the initial intent is to use it as a DevContainer within VSCode.

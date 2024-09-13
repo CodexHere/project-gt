@@ -4,7 +4,10 @@
     {
       "label": "Build - Build project",
       "type": "shell",
-      "command": "${config:idf.pythonBinPath} ${config:idf.espIdfPath}/tools/idf.py build",
+      // "command": "${config:idf.pythonBinPath} ${config:idf.espIdfPath}/tools/idf.py build",
+      // We want to cheat and use the same command as the button below.
+      // Had to scour the source for this one!
+      "command": "${command:espIdf.buildDevice}",
       "options": {
         "env": {
           "PATH": "${env:PATH}:${config:idf.customExtraPaths}"
@@ -203,7 +206,6 @@
         "connect_to_instance",
         "-t",
         "xtensa-esp32-elf-"
-
       ]
     }
   ]

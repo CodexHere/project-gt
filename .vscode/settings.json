@@ -5,12 +5,16 @@
     "idf.openOcdConfigs": [
         "board/esp32s3-builtin.cfg"
     ],
-    "idf.cmakeCompilerArgs": [
-        //     "-DDEBUG=1",
-        //     "--trace",
-        "-DKILL_LOGGING=1"
-    ],
-    "idf.ninjaArgs": [
-        "-v",
-    ]
+    // "idf.cmakeCompilerArgs": [
+    //     //  Must enable these if adding/modifying ANY
+    //     "-G=Ninja",
+    //     "-DPYTHON_DEPS_CHECKED=1",
+    //     "-DESP_PLATFORM=1",
+    //     //  Optional
+    //     "-DDEBUG=1",
+    //     "-DKILL_LOGGING=ON"
+    // ],
+    // "idf.ninjaArgs": [
+    //     "-v",
+    // ]
 }

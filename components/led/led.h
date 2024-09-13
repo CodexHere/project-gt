@@ -2,6 +2,8 @@
 
 #include "esp_log.h"
 
+#include "logging.h"
+
 #include "led_strip.h"
 
 #ifndef TAG

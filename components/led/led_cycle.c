@@ -1,8 +1,6 @@
 #include "led_cycle.h"
 
-#ifndef TAG
 #define TAG "LED Cycler"
-#endif
 
 void led_cycle(led_strip_handle_t led_strip, uint16_t num_leds, uint16_t next_delay, uint16_t offset)
 {

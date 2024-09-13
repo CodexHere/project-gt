@@ -13,14 +13,15 @@ void app_main(void)
     // Clear Strip on start!
     ESP_ERROR_CHECK(led_strip_clear(led_strip));
 
-    vTaskDelay(pdMS_TO_TICKS(1000));
+    vTaskDelay(pdMS_TO_TICKS(500));
 
     xTaskCreate(task_Cycle_LED, "CycleLED", 1024 * 3, (void *)&led_strip, configMAX_PRIORITIES - 1, NULL);
+
+    // task_Cycle_LED((void *)&led_strip);
 }
 
 void task_Cycle_LED(void *pvParameters)
 {
-
     ESP_LOGI(TAG, "\n\nLED Rainbow Started!\n\n");
 
     led_strip_handle_t *led_strip_ptr = (led_strip_handle_t *)pvParameters;
