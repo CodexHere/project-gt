@@ -12,11 +12,18 @@
 				"idf.pythonBinPath": "/opt/esp/python_env/idf5.3_py3.10_env/bin/python",
 				"idf.toolsPath": "/opt/esp",
 				"idf.gitPath": "/usr/bin/git",
-				"idf.showOnboardingOnInit": false
+				"idf.showOnboardingOnInit": false,
+				"idf.enableSizeTaskAfterBuildTask": false,
+				"idf.enableCCache": true,
+				"files.associations": {
+					"*.html": "html",
+					"*.h": "c",
+					"*.c": "c"
+				}
 			},
 			"extensions": [
 				"espressif.esp-idf-extension",
-				"ms-vscode.cpptools"
+				"ms-vscode.cpptools",
 			]
 		}
 	}

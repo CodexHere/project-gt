@@ -4,5 +4,13 @@
     "idf.adapterTargetName": "esp32s3",
     "idf.openOcdConfigs": [
         "board/esp32s3-builtin.cfg"
+    ],
+    "idf.cmakeCompilerArgs": [
+        //     "-DDEBUG=1",
+        //     "--trace",
+        "-DKILL_LOGGING=1"
+    ],
+    "idf.ninjaArgs": [
+        "-v",
     ]
 }
