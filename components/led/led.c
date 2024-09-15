@@ -1,6 +1,6 @@
 #include "led.h"
 
-led_strip_handle_t configure_led()
+led_strip_handle_t led_strip_configure()
 {
     // LED strip general initialization, according to your led board design
     led_strip_config_t strip_config = {

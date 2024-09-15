@@ -5,6 +5,7 @@
     "idf.openOcdConfigs": [
         "board/esp32s3-builtin.cfg"
     ],
+    "idf.notificationMode": "Output",
     // "idf.cmakeCompilerArgs": [
     //     //  Must enable these if adding/modifying ANY
     //     "-G=Ninja",

@@ -2,4 +2,7 @@
 
 #include "freertos/FreeRTOS.h"
 
-void hsv_to_rgb(uint32_t h, uint32_t s, uint32_t v, uint32_t *r, uint32_t *g, uint32_t *b);
+/// @brief Simple helper function, converting HSV color space to RGB color space
+///
+/// Wiki: https://en.wikipedia.org/wiki/HSL_and_HSV
+void hsv_to_rgb(uint32_t hue, uint32_t saturation, uint32_t value, uint32_t *red, uint32_t *green, uint32_t *blue);

@@ -1,7 +1,5 @@
 #pragma once
 
-#include "esp_log.h"
-
 #include "logging.h"
 
 #include "led_strip.h"
@@ -20,4 +18,6 @@
 #define LED_STRIP_RMT_RES_HZ (10 * 1000 * 1000)
 #endif
 
-led_strip_handle_t configure_led();
+/// @brief Generate an RMT configuration for our LED Strip
+/// @return Pointer to the `led_strip_handle`
+led_strip_handle_t led_strip_configure();

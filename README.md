@@ -25,7 +25,7 @@ Currently, a simple app starts a Task responsible for cycling an [onboard] RGB L
 I've added a common `includes` path to be accessible throughout the project.
 
 There's a new `KILL_LOGGING` build parameter you can add that will disable logging throughout my code.
- 
+
 I've also spit the code into "private" Components so they are separated and the logic is cleaner.
 
 ## Docker

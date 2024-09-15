@@ -1,31 +1,32 @@
 {
-	"name": "ESP-IDF QEMU",
-	"dockerComposeFile": "docker-compose.yml",
-	"service": "dev",
-	"workspaceFolder": "/workspace",
-	"customizations": {
-		"vscode": {
-			"settings": {
-				"terminal.integrated.defaultProfile.linux": "bash",
-				"idf.espIdfPath": "/opt/esp/idf",
-				"idf.pythonBinPath": "/opt/esp/python_env/idf5.3_py3.10_env/bin/python",
-				"idf.toolsPath": "/opt/esp",
-				"idf.gitPath": "/usr/bin/git",
-				"idf.customExtraPaths": "",
-				"idf.showOnboardingOnInit": false,
-				"idf.enableSizeTaskAfterBuildTask": false,
-				"idf.enableCCache": true,
-				"idf.customTask": "idf.py reconfigure",
-				"files.associations": {
-					"*.html": "html",
-					"*.h": "c",
-					"*.c": "c"
-				}
-			},
-			"extensions": [
-				"espressif.esp-idf-extension",
-				"ms-vscode.cpptools"
-			]
-		}
-	}
+  "name": "espidf",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "dev",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "idf.pythonBinPath": "/opt/esp/python_env/idf5.3_py3.10_env/bin/python",
+        "idf.espIdfPath": "/opt/esp/idf",
+        "idf.toolsPath": "/opt/esp",
+        "idf.gitPath": "/usr/bin/git",
+        "idf.customExtraPaths": "",
+        "idf.showOnboardingOnInit": false,
+        "idf.enableSizeTaskAfterBuildTask": false,
+        "idf.enableCCache": true,
+        "idf.customTask": "idf.py reconfigure",
+        "files.associations": {
+          "*.html": "html",
+          "*.h": "c",
+          "*.c": "c"
+        }
+      },
+      "extensions": [
+        "espressif.esp-idf-extension",
+        "ms-vscode.cpptools",
+        "EditorConfig.EditorConfig"
+      ]
+    }
+  }
 }
